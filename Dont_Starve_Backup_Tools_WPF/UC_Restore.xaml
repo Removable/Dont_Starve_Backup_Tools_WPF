@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Dont_Starve_Backup_Tools_WPF.UC_Restore"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="276" d:DesignWidth="499">
+    <Grid Background="#2d2d30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="lbox_fileList" HorizontalAlignment="Left" Height="161" Margin="45,20,0,0" VerticalAlignment="Top" Width="167"/>
+        <Button Name="btn_restore" Style="{DynamicResource myBtnStyle2}" Content="还 原" HorizontalAlignment="Left" Margin="45,195,0,0" Foreground="White" VerticalAlignment="Top" Width="66" Height="23" Click="btn_restore_Click"/>
+        <Button Name="btn_delete" Style="{DynamicResource myBtnStyle2}" Content="删 除" HorizontalAlignment="Left" Margin="146,195,0,0" Foreground="White" VerticalAlignment="Top" Width="66" Height="23" Click="btn_delete_Click"/>
+        <Button Name="btn_cutAll" Style="{DynamicResource myBtnStyle}" Content="一 键&#13;转 移" Foreground="White" HorizontalAlignment="Left" Margin="267,30,0,0" VerticalAlignment="Top" Width="75" Height="70" Click="btn_cutAll_Click"/>
+        <Button Name="btn_openfileFolder" Style="{DynamicResource myBtnStyle}" Content="存 档&#13;位 置" Foreground="White" HorizontalAlignment="Left" Margin="267,142,0,0" VerticalAlignment="Top" Width="75" Height="70" Click="btn_openfileFolder_Click"/>
+        <Button Name="btn_refresh" Style="{DynamicResource myBtnStyle}" Content="旧 档&#13;恢 复" Foreground="White" HorizontalAlignment="Left" Margin="378,30,0,0" VerticalAlignment="Top" Width="75" Height="70" Click="btn_refresh_Click"/>
+        <Button Name="btn_openFolder" Style="{DynamicResource myBtnStyle}" Content="备 份&#13;位 置" Foreground="White" HorizontalAlignment="Left" Margin="378,142,0,0" VerticalAlignment="Top" Width="75" Height="70" Click="btn_openFolder_Click"/>
+        <Label Name="label_info" Content="{DynamicResource ResourceKey=lb-info}" HorizontalAlignment="Left" Foreground="Gray" Margin="471,249,0,0" VerticalAlignment="Top" Visibility="Visible" Width="28" Height="27" MouseMove="label_info_MouseMove" MouseLeave="label_info_MouseLeave"/>
+
+    </Grid>
+</UserControl>

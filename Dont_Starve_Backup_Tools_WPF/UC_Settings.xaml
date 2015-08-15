@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Dont_Starve_Backup_Tools_WPF.UC_Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="302" d:DesignWidth="499">
+    <Grid Background="#2d2d30">
+        <TextBlock HorizontalAlignment="Left" Margin="27,53,0,0" TextWrapping="Wrap" Text="存档位置：" FontSize="14" Foreground="White" VerticalAlignment="Top"/>
+        <TextBox Name="tb_filePath" HorizontalAlignment="Left" Height="23" Margin="27,78,0,0" Text="未设置" VerticalAlignment="Top" Width="304" IsReadOnly="True"/>
+        <Button Name="btn_settingFPath" Style="{DynamicResource myBtnStyle2}" Content="手动设置" Foreground="White" HorizontalAlignment="Left" Margin="407,78,0,0" VerticalAlignment="Top" Width="66" Height="23" Click="btn_settingFPath_Click"/>
+        <Button Name="btn_search" Style="{DynamicResource myBtnStyle2}" Content="自动搜索" Foreground="White" HorizontalAlignment="Left" Margin="336,78,0,0" VerticalAlignment="Top" Width="66" Height="23" Click="btn_search_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,122,0,0" TextWrapping="Wrap" Text="备份位置：" FontSize="14" Foreground="White" VerticalAlignment="Top"/>
+        <TextBox Name="tb_backupPath" HorizontalAlignment="Left" Height="23" Margin="27,145,0,0" Text="未设置" VerticalAlignment="Top" Width="375" IsReadOnly="True"/>
+        <Button Name="btn_settingBPath" Style="{DynamicResource myBtnStyle2}" Content="手动设置" Foreground="White" HorizontalAlignment="Left" Margin="407,145,0,0" VerticalAlignment="Top" Width="66" Height="23" Click="btn_settingBPath_Click"/>
+        <Button Name="btn_saveChange" Style="{DynamicResource myBtnStyle2}" Content="保存设置" FontSize="15" Foreground="White" Margin="197,200,205,0" VerticalAlignment="Top" Height="38" Click="btn_saveChange_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,13,0,0" TextWrapping="Wrap" Text="游戏属性：" FontSize="14" Foreground="White" VerticalAlignment="Top"/>
+        <Label Name="lb_zb" HorizontalAlignment="Left" Margin="136,10,0,0" VerticalAlignment="Top" Content="{DynamicResource lb-checked3}"/>
+        <Button Name="btn_zb" Click="btn_zb_Click" Style="{DynamicResource myBtnStyle}" Content="steam正版" HorizontalAlignment="Left" Margin="162,10,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Button Name="btn_db" Style="{DynamicResource myBtnStyle}" Content="破解版" HorizontalAlignment="Left" Margin="329,10,0,0" VerticalAlignment="Top" Width="60" Height="26" Click="btn_db_Click"/>
+        <Label Name="lb_db" HorizontalAlignment="Left" Margin="307,10,0,0" VerticalAlignment="Top" Content="{DynamicResource ResourceKey=lb-checked4}"/>
+        <Button x:Name="btn_openFolder" Content="{DynamicResource btn-openfolder2}" Style="{DynamicResource myBtnStyle}" ToolTip="打开文件夹" HorizontalAlignment="Left" Margin="473,78,0,0" VerticalAlignment="Top" Width="26" Height="23" Click="btn_openFolder_Click"/>
+    </Grid>
+</UserControl>

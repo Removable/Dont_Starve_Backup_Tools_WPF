@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Dont_Starve_Backup_Tools_WPF.UC_BackupNow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="276" d:DesignWidth="499">
+    <Grid Background="#2D2D30">
+        <Button Style="{DynamicResource myBtnStyle2}" Name="btn_DoBackupNow" Content="备份" Foreground="White" HorizontalAlignment="Left" Margin="290,50,0,0" VerticalAlignment="Top" Width="106" Height="99" FontSize="20" FontWeight="Bold" Click="btn_DoBackupNow_Click"/>
+        <TextBlock Text="最近一次备份" HorizontalAlignment="Left" Foreground="White" Margin="57,74,0,0" TextAlignment="Center" VerticalAlignment="Top" FontWeight="SemiBold" Width="134"/>
+        <TextBlock Name="tblock_latest" Foreground="White"  HorizontalAlignment="Left" Margin="57,105,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="暂未备份" VerticalAlignment="Top" FontWeight="SemiBold" Width="134"/>
+    </Grid>
+</UserControl>

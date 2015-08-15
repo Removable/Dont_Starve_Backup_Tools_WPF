@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Dont_Starve_Backup_Tools_WPF.UC_Backup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="302" d:DesignWidth="499">
+    <Grid Background="#2d2d30" Name="grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+        <Button Name="btn_backupNow" Style="{DynamicResource ResourceKey=myBtnStyle}" Content="立刻备份" Margin="114,0,322,0" VerticalAlignment="Top" Height="38" Click="btn_backupNow_Click"/>
+        <Button Name="btn_backupTiming" Style="{DynamicResource ResourceKey=myBtnStyle}" Content="定时备份" Margin="322,0,114,0" VerticalAlignment="Top" Height="38" Click="btn_backupTiming_Click"/>
+        <Border Name="bd_ub" BorderThickness="1" HorizontalAlignment="Left" Height="238" Grid.Row="1" VerticalAlignment="Top" Width="479" Margin="10,10,0,0"/>
+        <Label Content="{DynamicResource lb-checked2}" Name="lb_now" HorizontalAlignment="Left" Margin="88,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="{DynamicResource lb-checked}" Name="lb_timing" HorizontalAlignment="Left" Margin="296,6,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn_openFolder" Content="{DynamicResource btn-openfolder}" Style="{DynamicResource myBtnStyle}" ToolTip="打开备份文件夹" HorizontalAlignment="Left" Margin="463,5,0,0" VerticalAlignment="Top" Width="26" Height="27" Click="btn_openFolder_Click"/>
+    </Grid>
+</UserControl>

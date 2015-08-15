@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Dont_Starve_Backup_Tools_WPF.UC_About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="302" d:DesignWidth="499">
+    <Grid Background="#2d2d30" Name="grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+        <Button Name="btn_about" Style="{DynamicResource ResourceKey=myBtnStyle}" Content="关 于" Foreground="Gray" Margin="104,0,332,0" VerticalAlignment="Top" Height="38" Click="btn_about_Click"/>
+        <Button Name="btn_updateLog" Style="{DynamicResource ResourceKey=myBtnStyle}" Content="更新日志" Foreground="Gray" Margin="322,0,114,0" VerticalAlignment="Top" Height="38" Click="btn_updateLog_Click"/>
+        <TextBox Name="tb_show" Height="163" Margin="49,22,48,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="" TextAlignment="Center" Foreground="Gray" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Auto"/>
+        <Button Name="btn_jxsp" Style="{DynamicResource myBtnStyle}" Content="饥荒新手教学视频" Click="btn_jxsp_Click" HorizontalAlignment="Left" Foreground="Gray" Margin="58,193,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Height="21"/>
+        <Button Name="btn_zbj" Style="{DynamicResource myBtnStyle}" Content="路叔斗鱼直播间" HorizontalAlignment="Left" Foreground="Gray" Margin="333,193,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Height="21" Click="btn_zbj_Click"/>
+        <Button x:Name="btn_checkUpdate" Style="{DynamicResource myBtnStyle}" Content="检查更新" Click="btn_checkUpdate_Click" Foreground="Gray" Margin="211,193,209,0" Grid.Row="1" VerticalAlignment="Top" Height="21"/>
+    </Grid>
+</UserControl>
